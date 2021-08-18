@@ -9,22 +9,14 @@
     <link rel="stylesheet" href="/signup/signup.css">
 </head>
 <body>
-    <!-- <div id="navbar">
-        <img class="img" src="logo.png">
-        <button><a href="index.html"><div class="items">Home</div></button></a>
-        <button><a href="#votingrights"><div class="items">Voting Rights</div></button></a>
-        <button><a href=""><div class="items">Climate Justice</div></button></a>
-        <button><a href=""><div class="items">Healthcare</div></button></a>
-        <button><a href=""><div class="items">Racial Injustice</div></button></a>
-        <button><a href=""><div class="items">Gun Violence</div></button></a>
-        <button><a href=""><div class="items">Hunger and Food Insecurity</div></button></a>
-        <button><a href="signup.html"><div class="items">Login</button></a>
-    </div> -->
-
     <div class="container">
-        <form class='form' id='Login' action="index.html">
+        <form class='form' id='Login' action="logged.html">
             <h1 class="form__title">Login</h1>
             <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username">
+                <div class= "form__input-error-message"></div>
+            </div>
             <div class="form__input-group">
                 <input type="text" class="form__input" autofocus placeholder="Email">
                 <div class= "form__input-error-message"></div>
@@ -33,7 +25,7 @@
                 <input type="password" class="form__input" autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
-            <a href="index.html"><button class="myButton" type="submit">Login</button></a>
+            <a href="logged.html"><button class="myButton" type="submit">Login</button></a>
             
             <p class="form__text">
                 <a id="linkCreateAccount" href="#" class="form__link">Don't have an account? Create one!</a>
@@ -47,15 +39,19 @@
             <h1 class="form__title">Create Account</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class= "form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
                 <input type="text" class="form__input" autofocus placeholder="Email">
                 <div class= "form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
+                <input type="password" class="form__input" placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+                <input type="password" class="form__input" placeholder="Confirm Password">
                 <div class="form__input-error-message"></div>
             </div>
             <a href="#"><button class="myButton" type="submit">Sign Up</button></a>
@@ -79,6 +75,3 @@
     </div>
 </body>
 </html>
-
-
-
