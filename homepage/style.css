@@ -1,0 +1,47 @@
+body {
+    font-family: Helvetica;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid blue;
+}
+
+
+#navbar:hover {
+    color: rgb(0, 0, 179);
+}
+
+button {
+    height: 20px;
+    background-color: rgb(57, 167, 187);
+    
+}
+
+#organization {
+    border: 3px solid blue;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+p{
+    font-family: Helvetica;
+    font-size: 600px;
+}
+
+h5 {
+    color: black;
+}
