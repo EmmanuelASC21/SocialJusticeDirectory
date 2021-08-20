@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <script src="/signup/signup.js"></script>
+    <script src="/signup/validation.js"></script>
     <link rel="stylesheet" href="/signup/signup.css">
 </head>
 <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <form class='form' id='Login' action="logged.html">
             <h1 class="form__title">Login</h1>
@@ -43,11 +61,11 @@
                 <div class= "form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Email">
+                <input type="text" id="signupEmail" class="form__input" autofocus placeholder="Email">
                 <div class= "form__input-error-message"></div>
             </div>
             <div class="form__input-group">
-                <input type="password" class="form__input" placeholder="Password">
+                <input type="password" id="signupPass" class="form__input" placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
             <div class="form__input-group">

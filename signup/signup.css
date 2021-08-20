@@ -193,3 +193,10 @@ button:hover {
 .form__link:hover{
     text-decoration: underline;
 }
+
+#closeout {
+    
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+}
