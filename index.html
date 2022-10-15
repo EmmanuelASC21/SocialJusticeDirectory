@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="/homepage/script.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -60,46 +61,52 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <li>
         <a href="#">Articles</a>
         <ul style="background-color:black">
-          <a href="https://www.aclu.org/issues/voting-rights" target="_blank" class="w3-bar-item w3-hide-small w3-padding-large w3-hover-white">Voting Rights</a>
-          <a href="https://yaleclimateconnections.org/2020/07/what-is-climate-justice/" target="_blank" class="w3-bar-item w3-hide-small w3-padding-large w3-hover-white">Climate Justice</a>
-          <a href="https://www.healthcareitnews.com/news/here-are-major-issues-facing-healthcare-2021-according-pwc" target="_blank" class="w3-bar-item w3-hide-small w3-padding-large w3-hover-white">Healthcare</a>
-          <a href="https://apnews.com/hub/racial-injustice" target="_blank" class="w3-bar-item w3-hide-small w3-padding-large w3-hover-white">Racial Injustice</a>
-          <a href="https://hungerandhealth.feedingamerica.org/understand-food-insecurity/#:~:text=The%20U.S.%20Department%20of%20Agriculture,for%20an%20active%2C%20healthy%20life.&text=Hunger%20refers%20to%20a%20personal,food%20at%20the%20household%20level." target="_blank" class="w3-bar-item w3-hide-small w3-padding-large w3-hover-white">Hunger and Food Insecurity</a>
+          <a href="https://www.aclu.org/issues/voting-rights" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Voting Rights</a>
+          <a href="https://yaleclimateconnections.org/2020/07/what-is-climate-justice/" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Climate Justice</a>
+          <a href="https://www.healthcareitnews.com/news/here-are-major-issues-facing-healthcare-2021-according-pwc" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Healthcare</a>
+          <a href="https://apnews.com/hub/racial-injustice" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Racial Injustice</a>
+          <a href="https://hungerandhealth.feedingamerica.org/understand-food-insecurity/#:~:text=The%20U.S.%20Department%20of%20Agriculture,for%20an%20active%2C%20healthy%20life.&text=Hunger%20refers%20to%20a%20personal,food%20at%20the%20household%20level." target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Hunger and Food Insecurity</a>
         </ul>
       </li>
     </ul>
-    <a href="#">Directory</a>
+    <ul>
+      <li>
+        <a href="#">Directory</a>
+        <ul style="background-color:black">
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Marches</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Walkouts</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Cleanups</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Rallys</a>
+        </ul>
+      </li>
+    </ul>
     <a class="w3-right" href="signup.html">Login</a>
     <a class="w3-right" href="#">Donate Now</a>
   </div>
 
 <!-- Header -->
 <header class="w3-container w3-indigo w3-center" style="padding:60px 16px 16px">
-  <img class="bigLogo" id="front" src=" ">
-  <!-- Responsive Image (Hopefully)-->
+  <img class="bigLogo" id="front" src= " ">
+  
+  <!-- Responsive Logo-->
     <script type="text/javascript">
-      document.getElementById('front').src = '/images/CC-remove.bg.png';
-      var screenWidth = window.innerWidth;
       
-      for(var i=0; i<imageBgs.length; i++) {
-    if( screenWidth < 768 ){
+      var screenWidth = window.innerWidth;
+      if( screenWidth < 1000 ){
         // Load mobile image
-        let logo = 'CC-mobile.png'
-    } else if( screenWidth >= 768 && screenWidth <= 1024 ) {
-        // Ipad
-        imageBgs[i].style.backgroundImage = 'url('+imageBgs[i].getAttribute('data-bg-img-tablet')+')';
-    } else {
+        document.getElementById('front').src = '/images/CC-Mobile.png';
+      } else {
         // desktop image
-        imageBgs[i].style.backgroundImage = 'url('+imageBgs[i].getAttribute('data-bg-img-desktop')+')';
+        document.getElementById('front').src = '/images/CC-remove.bg.png';
     }
-}
+
     </script>
   <h1 class="w3-margin w3-jumbo">Get Involved</h1>
   <h4>The Civil Center is a comprehensive encyclopedia of different charities and Non-Profit Organizations with the goal of spreading awareness on social justice issues and help connect people and organizations using information. Civil Center displays general and contact information on different charities and Non-Profit organizations with the intent to help connect people who care about their local communities with different organizations doing something about specific issues.</h4>
 </header>
 
 <header class="w3-container w3-indigo w3-center" style="padding:16px 16px">
-<h1 class="w3-margin w3-jumbo">Featured Organizations</h1>
+<h3 class="w3-margin w3-jumbo">Featured Groups</h3>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container w3-white">
@@ -119,7 +126,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container w3-white">
   <div class="w3-content">
     <div class="w3-twothird w3-white">
-      <a style="color: blue;"href="https://climatejusticealliance.org/about/" target="_blank" rel="noopener noreferrer"><h1>Climate Justice Alliance</h1></a>
+      <a style="color: blue;" href="https://climatejusticealliance.org/about/" target="_blank" rel="noopener noreferrer"> <h1>Climate Justice Alliance</h1> </a>
       <h5 style="color: black;" class="w3-padding-32">Climate Justice Alliance (CJA) formed in 2013 to create a new center of gravity in the climate movement by uniting frontline communities and organizations into a formidable force.</h5>
       <h6 style="color: black;" class="w3-padding-2">Call them @ (202) 455-8665</h6>
     </div>
