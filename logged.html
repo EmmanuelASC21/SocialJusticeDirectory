@@ -2,7 +2,7 @@
 <html lang="en">
 <title>Civil Center</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -58,26 +58,38 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="logged.html">Home</a>
     <ul>
       <li>
-        <a href="#">Social Justice Issues</a>
-        <ul>
-          <a href="https://www.aclu.org/issues/voting-rights" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Voting Rights</a>
-          <a href="https://yaleclimateconnections.org/2020/07/what-is-climate-justice/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Climate Justice</a>
-          <a href="https://www.healthcareitnews.com/news/here-are-major-issues-facing-healthcare-2021-according-pwc" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Healthcare</a>
-          <a href="https://apnews.com/hub/racial-injustice" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Racial Injustice</a>
-          <a href="https://hungerandhealth.feedingamerica.org/understand-food-insecurity/#:~:text=The%20U.S.%20Department%20of%20Agriculture,for%20an%20active%2C%20healthy%20life.&text=Hunger%20refers%20to%20a%20personal,food%20at%20the%20household%20level." class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hunger and Food Insecurity</a>
+        <a href="#">Articles</a>
+        <ul style="background-color:black">
+          <a href="https://www.aclu.org/issues/voting-rights" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Voting Rights</a>
+          <a href="https://yaleclimateconnections.org/2020/07/what-is-climate-justice/" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Climate Justice</a>
+          <a href="https://www.healthcareitnews.com/news/here-are-major-issues-facing-healthcare-2021-according-pwc" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Healthcare</a>
+          <a href="https://apnews.com/hub/racial-injustice" target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Racial Injustice</a>
+          <a href="https://hungerandhealth.feedingamerica.org/understand-food-insecurity/#:~:text=The%20U.S.%20Department%20of%20Agriculture,for%20an%20active%2C%20healthy%20life.&text=Hunger%20refers%20to%20a%20personal,food%20at%20the%20household%20level." target="_blank" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Hunger and Food Insecurity</a>
         </ul>
       </li>
     </ul>
+    <ul>
+      <li>
+        <a href="#">Directory</a>
+        <ul style="background-color:black">
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Marches</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Walkouts</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Cleanups</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Rallys</a>
+        </ul>
+      </li>
+    </ul>
+      <a href="#">Donate Now</a>
   </div>
 
     <ul id="profileNav">
       <li>
         <a href="#"><img class="pfp" src="/images/E.png"></a>
-        <ul>
-          <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Profile</a>
-          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Settings</a>
-          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Notifications</a>
-          <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Log Out</a>
+        <ul style="background-color:black">
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Profile</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Settings</a>
+          <a href="#" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Notifications</a>
+          <a href="index.html" class="w3-bar w3-hide-small w3-padding-large w3-hover-white">Log Out</a>
         </ul>
       </li>
     </ul>
@@ -103,19 +115,33 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-indigo w3-center" style="padding:60px 16px 16px">
-  <img class="bigLogo" src="/images/CC-remove.bg.png">
+  <img class="bigLogo" id="front" src=" ">
+  
+  <!--Responsive Logo-->
+  <script type="text/javascript">
+    
+      var screenWidth = window.innerWidth;
+      if( screenWidth < 1000 ){
+        // Load mobile image
+        document.getElementById('front').src = '/images/CC-Mobile.png';
+      } else {
+        // desktop image
+        document.getElementById('front').src = '/images/CC-remove.bg.png';
+    }
+
+  </script>
   <h1 class="w3-margin w3-jumbo">Get Involved</h1>
-  <h4>The Civil Center is a comprehensive encyclopedia of different charities and Non-Profit Organizations. Our goal is to spread awareness on social justice issues and help connect people and organizations using information. SJD displays general and contact information on different charities and Non-Profit organizations with the intent to help peple who care about their local communities.</h4>
+  <h4>The Civil Center is a comprehensive encyclopedia of different charities and Non-Profit Organizations with the goal of spreading awareness on social justice issues and help connect people and organizations using information. Civil Center displays general and contact information on different charities and Non-Profit organizations with the intent to help connect people who care about their local communities with different organizations doing something about specific issues.</h4>
 </header>
 
 <header class="w3-container w3-indigo w3-center" style="padding:16px 16px">
-<h1 class="w3-margin w3-jumbo">Featured Organizations</h1>
+<h1 class="w3-margin w3-jumbo">Featured Groups</h1>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container w3-white">
   <div class="w3-content">
     <div class="w3-twothird w3-white">
-      <a style="color: black;" href="https://www.votingrightsalliance.org/"><h1>Voting Rights Alliance</h1></a>
+      <a style="color: blue;" href="https://www.votingrightsalliance.org/" target="_blank" rel="noopener noreferrer"><h1>Voting Rights Alliance</h1></a>
       <h5 style="color: black;" class="w3-padding-32">The Voting Rights Alliance is a growing non-partisan network of organizations, activists, and legislators working to restore and protect voting rights from concerted attacks and to ensure all our votes are fairly counted.</h5>
     </div>
 
@@ -129,8 +155,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container w3-white">
   <div class="w3-content">
     <div class="w3-twothird w3-white">
-      <a style="color: black;"href="https://climatejusticealliance.org/about/"><h1>Climate Justice Alliance</h1></a>
+      <a style="color: blue;" href="https://climatejusticealliance.org/about/" target="_blank" rel="noopener noreferrer"><h1>Climate Justice Alliance</h1></a>
       <h5 style="color: black;" class="w3-padding-32">Climate Justice Alliance (CJA) formed in 2013 to create a new center of gravity in the climate movement by uniting frontline communities and organizations into a formidable force.</h5>
+      <h6 style="color: black;" class="w3-padding-32">Call The Climate Justice Alliance @ (202) 455-8665</h6>
     </div>
 
     <div class="w3-third w3-center w3-white">
@@ -143,8 +170,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container w3-white">
   <div class="w3-content">
     <div class="w3-twothird w3-white">
-      <a style="color: black;" href="https://www.aarp.org/"><h1>American Association of Retired Persons</h1></a>
+      <a style="color: blue;" href="https://www.aarp.org/" target="_blank" rel="noopener noreferrer"><h1>American Association of Retired Persons</h1></a>
       <h5 style="color: black;" class="w3-padding-32">AARP is a United States–based interest group focusing on issues affecting those over the age of fifty. According to the organization, it had more than 38 million members as of 2018. The magazine and bulletin it sends to its members are the two largest-circulation publications in the United States.</h5>
+      <h6 style="color black;" class="w3-padding-32">Call AARP @ 1-888-687-2277</h6>
     </div>
 
     <div class="w3-third w3-center w3-white">
@@ -157,8 +185,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container w3-white">
   <div class="w3-content">
     <div class="w3-twothird w3-white">
-      <a style="color: black;" href="https://naacp.org/"><h1>National Association for the Advancement of Colored People</h1></a>
+      <a style="color: blue;" href="https://naacp.org/" target="_blank" rel="noopener noreferrer"><h1>National Association for the Advancement of Colored People</h1></a>
       <h5 style="color: black;" class="w3-padding-32">From police brutality to COVID-19 to voter suppression, Black communities are under attack. We work to disrupt inequality, dismantle racism, and accelerate change in key areas including criminal justice, health care, education, climate, and the economy. When it comes to civil rights and social justice, we have the unique ability to secure more wins than anyone else. Help make racial equity a reality.</h5>
+      <h6 style="color: black;" class="w3-padding-32">Call the NAACP @ (410) 580-5780</h6>
     </div>
 
     <div class="w3-third w3-center w3-white">
@@ -171,8 +200,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container w3-white">
   <div class="w3-content">
     <div class="w3-twothird w3-white">
-      <a style="color: black;" href="https://www.feedingamerica.org/"><h1>Feeding America</h1></a>
+      <a style="color: blue;" href="https://www.feedingamerica.org/" target="_blank" rel="noopener noreferrer"><h1>Feeding America</h1></a>
       <h5 style="color: black;" class="w3-padding-32">The Feeding America network is the nation’s largest domestic hunger-relief organization, working to connect people with food and end hunger. Donors, staff, and volunteers all play an important role in our efforts to end hunger in the United States.</h5>
+      <h6 style="color: black;" class="w3-padding-32">Call Feeding America @ 1-800-771-2303</h6>
     </div>
 
     <div class="w3-third w3-center w3-white">
